@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb, #90caf9);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+.titulo-juegos {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 2px solid #1a237e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 320px;
+  margin: 20px auto;
+
+  /* Transiciones automáticas */
+  animation: animarTitulo 4s ease-in-out infinite alternate;
+}
+
+.introduccion {
+  width: 60%;
+}
+
+@keyframes animarTitulo {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #3949ab, #5c6bc0);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .titulo-juegos {
+    width: 60%;
+  }
+  .introduccion {
+    width: 80%;
+    font-size: 12px;
+    color: steelblue;
+    margin-bottom: 20px;
+  }
+
+  .Juegos {
+    width: 80%;
+    justify-content: left;
+  }
+
+  .imagen {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}
