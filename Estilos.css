@@ -1,11 +1,14 @@
 body {
+  background: linear-gradient(
+    to bottom,
+    #add8e6,
+    #ffffff
+  ); /* Azul claro a blanco */
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #e3f2fd, #bbdefb, #90caf9);
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .titulo-juegos {
@@ -22,7 +25,6 @@ body {
   width: 90%;
   max-width: 320px;
   margin: 20px auto;
-
   /* Transiciones automáticas */
   animation: animarTitulo 4s ease-in-out infinite alternate;
 }
@@ -52,7 +54,7 @@ body {
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .titulo-juegos {
-    width: 60%;
+    width: 70%;
   }
   .introduccion {
     width: 80%;
@@ -71,5 +73,30 @@ body {
     height: 100px;
     margin-top: 10px;
     border-radius: 5px;
+  }
+
+  .Tipo_Juegos {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .Tipo_Juegos a {
+    display: block;
+    color: steelblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+  }
+
+  .Tipo_Juegos a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: scale(1.05);
   }
 }
