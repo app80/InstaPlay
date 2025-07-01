@@ -33,6 +33,14 @@ body {
   width: 60%;
 }
 
+.Tipo_Juegos {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
 @keyframes animarTitulo {
   0% {
     transform: scale(1);
