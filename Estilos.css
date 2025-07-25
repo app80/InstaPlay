@@ -66,6 +66,56 @@ body {
   }
 }
 
+/* Estilo base para el botón */
+.btn-jugar {
+  position: relative;
+  background: linear-gradient(135deg, #ff7b00, #ff1e00);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efecto del borde eléctrico que siempre estará visible */
+.btn-jugar::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00f9ff, #00e2ff, #00f9ff, #ff008c);
+  border-radius: 50px;
+  z-index: -1;
+  animation: borderEffect 1.5s infinite linear; /* Animación constante */
+}
+
+/* Animación del borde eléctrico */
+@keyframes borderEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .titulo-juegos {
