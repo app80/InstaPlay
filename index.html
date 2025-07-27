@@ -17,22 +17,57 @@
       <div class="introduccion">
         <p>
           Sin descargar, solo toca, juega y relájate. Fácil, rápido y sin
-          complicaciones.
+          complicaciones. Diversión instantánea al alcance de tu mano.
         </p>
       </div>
-      <div class="Tipo_Juegos">
-        <a href="#">🧠 Juegos para Pensar</a>
-        <a href="#">🗺️ Juegos de Aventura</a>
-        <a href="#">🎮 Juegos Casuales</a>
+
+      <div class="carousel">
+        <div class="carousel-images">
+          <img class="img_movil" src="./imagenes/FlowState.jpg" />
+          <img class="img_movil" src="./imagenes/JewelCrush.jpg" />
+          <img class="img_movil" src="./imagenes/Puzzle Slide.jpg" />
+          <img class="img_movil" src="./imagenes/sudoku.jpg" />
+          <img class="img_movil" src="./imagenes/Trixology.jpg" />
+          <img class="img_movil" src="./imagenes/PipeMaster.jpg" />
+          <img class="img_movil" src="./imagenes/GravityKid.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/Stupid Zombie.jpg" />
+          <img class="img_movil" src="./imagenes/BikerLane.jpg" />
+          <img class="img_movil" src="./imagenes/Parkour.jpg" />
+          <img class="img_movil" src="./imagenes/KongClimb.jpg" />
+          <img class="img_movil" src="./imagenes/Aztec.jpg" />
+          <img class="img_movil" src="./imagenes/PinBall.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/BrickBreaker.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/Donut.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/PinballClassic.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/AxeMaster.jpg" alt="" />
+          <img class="img_movil" src="./imagenes/SpaceAllien.jpg" alt="" />
+        </div>
       </div>
-    </center>
-    <br /><br />
-    <center>
+      <br /><br />
       <button class="btn-jugar">
         <a href="Pensar.html" style="text-decoration: none; color: aliceblue">
           Comienza a Jugar</a
         >
       </button>
+      <script>
+        const imagenes = document.querySelectorAll(".img_movil");
+        let index = 1;
+
+        function mostrarUnaImagen() {
+          // Oculta todas
+          imagenes.forEach((img) => (img.style.display = "none"));
+
+          // Muestra solo una
+          imagenes[index].style.display = "flex";
+
+          // Avanza al siguiente índice
+          index = (index + 1) % imagenes.length;
+        }
+
+        // Mostrar una cada 1 segundo
+        setInterval(mostrarUnaImagen, 1500);
+        mostrarUnaImagen(); // Mostrar la primera al iniciar
+      </script>
     </center>
   </body>
 </html>

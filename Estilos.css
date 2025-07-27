@@ -140,6 +140,67 @@ body {
     border-radius: 5px;
   }
 
+  .img_movil {
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .Tipo_Juegos {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .Tipo_Juegos a {
+    display: block;
+    color: steelblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+  }
+
+  .Tipo_Juegos a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: scale(1.05);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .titulo-juegos {
+    width: 50%;
+  }
+  .introduccion {
+    width: 50%;
+    font-size: 15px;
+    color: steelblue;
+    margin-bottom: 20px;
+  }
+
+  .Juegos {
+    width: 50%;
+    justify-content: left;
+  }
+
+  .imagen {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .img_movil {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
   .Tipo_Juegos {
     padding: 10px;
     border-radius: 10px;
